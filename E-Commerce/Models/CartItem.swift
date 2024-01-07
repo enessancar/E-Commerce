@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct CartItem: Codable {
+    let count: Int
+    let product: Product
+}
