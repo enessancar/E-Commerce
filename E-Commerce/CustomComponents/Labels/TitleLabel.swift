@@ -35,7 +35,7 @@ final class TitleLabel: UILabel {
         self.numberOfLines = numberOfLines
         self.textAlignment = textAlignment
         self.font = UIFont.systemFont(ofSize: fontSize, weight: fontWightToUIFontWeight(weight: fontWeight))
-        lineBreakMode = .byTruncatingMiddle
+        lineBreakMode = .byTruncatingTail
         self.textColor = textColor
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.9
