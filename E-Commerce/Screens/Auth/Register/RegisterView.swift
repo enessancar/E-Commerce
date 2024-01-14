@@ -143,11 +143,11 @@ final class RegisterView: UIView {
     }
     
     // MARK: - Action
-    @objc private func didTapSignUp() {
+    private func didTapSignUp() {
         delegate?.signUpTapped()
     }
     
-    @objc private func didTapSignIn() {
+    private func didTapSignIn() {
         delegate?.signInTapped()
     }
 }
