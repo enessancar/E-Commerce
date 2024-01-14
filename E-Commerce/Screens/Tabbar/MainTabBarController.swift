@@ -11,9 +11,22 @@ final class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTabBar()
     }
     
-    fileprivate func createNavController(for viewController: UIViewController, title: String, imageName: String) -> UIViewController {
+    private func setupTabBar() {
+        tabBar.tintColor = .label
+        tabBar.unselectedItemTintColor = .systemGray
+        
+        viewControllers = [
+            createNavController(for: HomeVC(), title: "Home", imageName: "house", selectedImage: UIImage(systemName: "house.fill")),
+            createNavController(for: SearchVC(), title: "Search", imageName: "magnifyingglass"),
+            createNavController(for: CartVC(), title: "Cart", imageName: "cart", selectedImage: UIImage(systemName: "cart.fill")),
+            createNavController(for: ProfileVC(), title: "Profile", imageName: "person", selectedImage: UIImage(systemName: "person.fill"))
+        ]
+    }
+        
+    fileprivate func createNavController(for viewController: UIViewController, title: String, imageName: String, selectedImage: UIImage? = nil) -> UIViewController {
         
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = true
@@ -21,7 +34,7 @@ final class MainTabBarController: UITabBarController {
         viewController.view.backgroundColor = .systemBackground
         navController.tabBarItem.title = title
         navController.tabBarItem.image = UIImage(systemName: imageName)
-        navController.navigationBar.tintColor = .systemRed
+        navController.tabBarItem.selectedImage = selectedImage
         return navController
     }
 }

@@ -71,6 +71,14 @@
 		ECCA07552B5008F8000E7052 /* AlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07542B5008F8000E7052 /* AlertContainerView.swift */; };
 		ECCA07572B5017B9000E7052 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07562B5017B9000E7052 /* UIViewController+Ext.swift */; };
 		ECCA07592B501867000E7052 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07582B501867000E7052 /* LoadingView.swift */; };
+		ECCA075C2B5172E8000E7052 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA075B2B5172E8000E7052 /* HomeVC.swift */; };
+		ECCA075F2B517334000E7052 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA075E2B517334000E7052 /* SearchVC.swift */; };
+		ECCA07622B517378000E7052 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07612B517378000E7052 /* CartVC.swift */; };
+		ECCA07652B5173AE000E7052 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07642B5173AE000E7052 /* ProfileVC.swift */; };
+		ECCA07682B532C59000E7052 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07672B532C59000E7052 /* CustomImageView.swift */; };
+		ECCA076C2B532FBE000E7052 /* SpecialCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA076B2B532FBE000E7052 /* SpecialCollectionCell.swift */; };
+		ECCA076F2B53E89C000E7052 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ECCA076E2B53E89C000E7052 /* Kingfisher */; };
+		ECCA07712B543C16000E7052 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA07702B543C16000E7052 /* CategoryCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +115,13 @@
 		ECCA07542B5008F8000E7052 /* AlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerView.swift; sourceTree = "<group>"; };
 		ECCA07562B5017B9000E7052 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		ECCA07582B501867000E7052 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		ECCA075B2B5172E8000E7052 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		ECCA075E2B517334000E7052 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		ECCA07612B517378000E7052 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		ECCA07642B5173AE000E7052 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		ECCA07672B532C59000E7052 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		ECCA076B2B532FBE000E7052 /* SpecialCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCollectionCell.swift; sourceTree = "<group>"; };
+		ECCA07702B543C16000E7052 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,7 @@
 				ECBB4B042B4B258D00145771 /* Alamofire in Frameworks */,
 				ECBB4B542B4E8A3900145771 /* FirebaseAnalytics in Frameworks */,
 				ECBB4B642B4E8A3900145771 /* FirebaseCrashlytics in Frameworks */,
+				ECCA076F2B53E89C000E7052 /* Kingfisher in Frameworks */,
 				ECCA07502B5006B3000E7052 /* GoogleSignInSwift in Frameworks */,
 				ECBB4B6C2B4E8A3900145771 /* FirebaseFirestore in Frameworks */,
 				ECBB4B6A2B4E8A3900145771 /* FirebaseDynamicLinks in Frameworks */,
@@ -256,6 +272,7 @@
 		ECBB4B112B4B323700145771 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA07662B532C4C000E7052 /* ImageView */,
 				ECCA07512B5008A3000E7052 /* Alert */,
 				ECBB4B182B4B37EB00145771 /* Labels */,
 				ECBB4B152B4B349000145771 /* TextField */,
@@ -292,6 +309,10 @@
 		ECBB4B1E2B4B394700145771 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA07632B5173A7000E7052 /* Profile */,
+				ECCA07602B517368000E7052 /* Cart */,
+				ECCA075D2B517327000E7052 /* Search */,
+				ECCA075A2B5172E0000E7052 /* Home */,
 				ECCA07472B4FF8EF000E7052 /* Tabbar */,
 				ECBB4B1F2B4B394F00145771 /* Auth */,
 			);
@@ -369,6 +390,64 @@
 			path = Alert;
 			sourceTree = "<group>";
 		};
+		ECCA075A2B5172E0000E7052 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA07692B532EE6000E7052 /* View */,
+				ECCA075B2B5172E8000E7052 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ECCA075D2B517327000E7052 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA075E2B517334000E7052 /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		ECCA07602B517368000E7052 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA07612B517378000E7052 /* CartVC.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		ECCA07632B5173A7000E7052 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA07642B5173AE000E7052 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECCA07662B532C4C000E7052 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA07672B532C59000E7052 /* CustomImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		ECCA07692B532EE6000E7052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA076A2B532EF5000E7052 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECCA076A2B532EF5000E7052 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA076B2B532FBE000E7052 /* SpecialCollectionCell.swift */,
+				ECCA07702B543C16000E7052 /* CategoryCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +499,7 @@
 				ECBB4B872B4E8A3900145771 /* FirebaseStorageCombine-Community */,
 				ECCA074D2B5006B3000E7052 /* GoogleSignIn */,
 				ECCA074F2B5006B3000E7052 /* GoogleSignInSwift */,
+				ECCA076E2B53E89C000E7052 /* Kingfisher */,
 			);
 			productName = "E-Commerce";
 			productReference = ECBB4AE22B4B236200145771 /* E-Commerce.app */;
@@ -454,6 +534,7 @@
 				ECBB4B232B4B3AFA00145771 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				ECBB4B522B4E8A3900145771 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				ECCA074C2B5006B3000E7052 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				ECCA076D2B53E89C000E7052 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = ECBB4AE32B4B236200145771 /* Products */;
 			projectDirPath = "";
@@ -482,11 +563,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBB4AEA2B4B236200145771 /* ViewController.swift in Sources */,
+				ECCA076C2B532FBE000E7052 /* SpecialCollectionCell.swift in Sources */,
 				ECBB4B172B4B34A200145771 /* CustomTextField.swift in Sources */,
 				ECBB4B092B4B299500145771 /* Product.swift in Sources */,
 				ECCA07532B5008B9000E7052 /* AlertVC.swift in Sources */,
 				ECBB4B3E2B4D954F00145771 /* FirebaseAuthManager.swift in Sources */,
 				ECCA07592B501867000E7052 /* LoadingView.swift in Sources */,
+				ECCA075F2B517334000E7052 /* SearchVC.swift in Sources */,
+				ECCA07682B532C59000E7052 /* CustomImageView.swift in Sources */,
 				ECCA07552B5008F8000E7052 /* AlertContainerView.swift in Sources */,
 				ECBB4B1C2B4B384900145771 /* SecondaryTitleLabel.swift in Sources */,
 				ECBB4AE62B4B236200145771 /* AppDelegate.swift in Sources */,
@@ -500,15 +584,19 @@
 				ECBB4B402B4D959B00145771 /* ApplicationVariables.swift in Sources */,
 				ECCA074B2B50047D000E7052 /* ForgotPasswordVC.swift in Sources */,
 				ECBB4AE82B4B236200145771 /* SceneDelegate.swift in Sources */,
+				ECCA07652B5173AE000E7052 /* ProfileVC.swift in Sources */,
 				ECBB4B102B4B2F7F00145771 /* UIStackView+Ext.swift in Sources */,
 				ECCA07462B4FF7BC000E7052 /* RegisterVC.swift in Sources */,
 				ECBB4B1A2B4B37F400145771 /* TitleLabel.swift in Sources */,
 				ECBB4B302B4D945200145771 /* AuthViewModel.swift in Sources */,
+				ECCA075C2B5172E8000E7052 /* HomeVC.swift in Sources */,
 				ECBB4B0E2B4B2F3900145771 /* String+Ext.swift in Sources */,
 				ECBB4B0B2B4B29A200145771 /* CartItem.swift in Sources */,
+				ECCA07712B543C16000E7052 /* CategoryCollectionCell.swift in Sources */,
 				ECBB4B512B4DAFEC00145771 /* ForgotPasswordView.swift in Sources */,
 				ECBB4B2D2B4D848000145771 /* LoginVC.swift in Sources */,
 				ECCA07572B5017B9000E7052 /* UIViewController+Ext.swift in Sources */,
+				ECCA07622B517378000E7052 /* CartVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +843,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		ECCA076D2B53E89C000E7052 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -927,6 +1023,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ECCA074C2B5006B3000E7052 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		ECCA076E2B53E89C000E7052 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECCA076D2B53E89C000E7052 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

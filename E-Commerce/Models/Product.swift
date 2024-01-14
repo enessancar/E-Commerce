@@ -28,18 +28,18 @@ enum Category: String, Codable, CaseIterable {
         self.rawValue
     }
     
-    var image: UIImageView {
+    var image: UIImage {
         switch self {
         case .all:
-            UIImageView(image: .allCategories)
+            UIImage(named: "allCategories")!
         case .electronics:
-            UIImageView(image: .electronics)
+            UIImage(named: "men")!
         case .jewelery:
-            UIImageView(image: .jewelery)
+            UIImage(named: "jewelery")!
         case .menSClothing:
-            UIImageView(image: .men)
+            UIImage(named: "men")!
         case .womenSClothing:
-            UIImageView(image: .women)
+            UIImage(named: "women")!
         }
     }
 }

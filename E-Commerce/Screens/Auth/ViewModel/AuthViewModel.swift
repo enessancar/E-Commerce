@@ -8,7 +8,6 @@
 import FirebaseAuth
 
 final class AuthViewModel {
-    private init() {}
     
     lazy var manager = FirebaseAuthManager()
     
