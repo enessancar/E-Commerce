@@ -170,18 +170,19 @@ final class LoginView: UIView {
     }
     
     //MARK: - @Actions
-    @objc private func didTapNewUser() {
+    private func didTapNewUser() {
         delegate?.signUpTapped()
     }
     
-    @objc private func didTapForgotPassword() {
+    private func didTapForgotPassword() {
         delegate?.forgotPasswordTapped()
     }
-    @objc private func didTapSignIn() {
+    
+    private func didTapSignIn() {
         delegate?.signInButtonTapped()
     }
     
-    @objc private func didTapGoogleSignIn() {
+    private func didTapGoogleSignIn() {
         delegate?.googleSignInButtonTapped()
     }
 }
