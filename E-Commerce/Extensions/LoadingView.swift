@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import SnapKit
+ 
 class DataLoadingVC: UIViewController {
     
     private var containerView: UIView!
@@ -25,13 +26,9 @@ class DataLoadingVC: UIViewController {
         let activityIndicator = UIActivityIndicatorView(style: .large)
         containerView.addSubview(activityIndicator)
         
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            activityIndicator.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: containerView.centerYAnchor)
-        ])
-        
+        activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
         activityIndicator.startAnimating()
     }
     
